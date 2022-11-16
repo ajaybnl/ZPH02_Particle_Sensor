@@ -39,15 +39,15 @@ None.
 aqi_sensor.begin(5);
 ```
 
-### reading(bool getdutycycle)
+### getAqi(bool getdutycycle)
 ##### Description
 Adds a new data point to the moving average. Returns the new moving average value. Until the interval array is filled, the average is calculated from those data points from AQI of the sensor output pulses, i.e. a fewer number of points than defined by the constructor.
 ###### Syntax
 
 ###Read AQI
-`reading(false);`
+`getAqi(false);`
 ###Read Duty Cycle
-`reading(true);`
+`getAqi(true);`
 ##### Parameters
 True = DutyCycle, No = AQI Moving Average
 ##### Returns
@@ -55,10 +55,10 @@ The new moving average value OR DutyCycle
 ##### Example
 ```c++
 // Get Duty Cycle from Sensor
-float dutycycle = aqi_sensor.reading(true);
+float dutycycle = aqi_sensor.getAqi(true);
 
 // Get AQI Moving Average from Sensor
-float AQI = aqi_sensor.reading(false);
+float AQI = aqi_sensor.getAqi(false);
 
 ```
 
