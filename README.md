@@ -1,5 +1,5 @@
 # Arduino Library for PM2.5 AQI Particle Sensor : ZPH02
-
+## Compatible with all Microcontroller Like Arduino, Esp8266, ESP32 etc..
 
 
 ## Description
